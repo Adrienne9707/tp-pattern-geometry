@@ -13,6 +13,7 @@ public class CoordinateTest {
 		Coordinate c = new Coordinate();
 		Assert.assertEquals(0.0, c.getX(), EPSILON);
 		Assert.assertEquals(0.0, c.getY(), EPSILON);
+		
 	}
 
 }
