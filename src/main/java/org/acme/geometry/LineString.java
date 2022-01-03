@@ -4,15 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LineString extends Point{
-    private List<Point> points = new ArrayList<Point>();
+    private List<Point> points; //= new ArrayList<Point>();
 
 
     public LineString(){
-
+        this.points = new ArrayList<Point>();
     }
 
     public LineString(List<Point> points){
-        this.points = points;
+        if(points == null){
+            this.points = new ArrayList<Point>();
+        }
+        else{
+            this.points = points;
+        }
+        
         
     }
 

@@ -14,6 +14,7 @@ public class GeometryTest {
 	public void testDefaultConstructor(){
 		// TODO
         Coordinate c = new Coordinate(3.5, 6.6);
+        //Coordinate c = new Coordinate();
 		Point p = new Point(c); 
         
         List<Point> points = new ArrayList<>();
@@ -21,10 +22,12 @@ public class GeometryTest {
         
         LineString l = new LineString(points);
         
-		//Assert.assertEquals(3.5, p.getCoordinate().getX(), EPSILON);
-		//Assert.assertEquals(6.6, p.getCoordinate().getY(), EPSILON);
+		Assert.assertEquals(3.5, p.getCoordinate().getX(), EPSILON);
+		Assert.assertEquals(6.6, p.getCoordinate().getY(), EPSILON);
         Assert.assertEquals(1, l.getNumPoints());
         Assert.assertEquals(p, l.getPointN(0));
+        Assert.assertEquals(false, l.isEmpty());
+
 		
 	}
 }
