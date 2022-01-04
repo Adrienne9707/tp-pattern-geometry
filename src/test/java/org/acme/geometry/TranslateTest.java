@@ -17,11 +17,11 @@ public class TranslateTest {
         //Coordinate c = new Coordinate();
 		Point p = new Point(c); 
 
-        p.translate(2.3,2.1);
+        p.translate(10.0,10.0);
 
 
-        Assert.assertEquals(5.8, p.getCoordinate().getX(), EPSILON);
-		Assert.assertEquals(8.7, p.getCoordinate().getY(), EPSILON);
+        Assert.assertEquals(13.5, p.getCoordinate().getX(), EPSILON);
+		Assert.assertEquals(16.6, p.getCoordinate().getY(), EPSILON);
         Assert.assertEquals(false,p.isEmpty());
     }
 }

@@ -11,8 +11,8 @@ public class CoordinateTest {
 	public void testDefaultConstructor(){
 		// TODO
 		Coordinate c = new Coordinate();
-		Assert.assertEquals(5.8, c.getX(), EPSILON);
-		Assert.assertEquals(8.7, c.getY(), EPSILON);
+		Assert.assertEquals(13.5, c.getX(), EPSILON);
+		Assert.assertEquals(16.6, c.getY(), EPSILON);
 
 	}
 
