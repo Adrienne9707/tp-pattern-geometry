@@ -18,12 +18,14 @@ public class CloneTest {
 		Point p = new Point(c); 
 
         Point copy = p.clone();
-        //copy.translate(10.0,10.0);
+        
 
         Assert.assertEquals(3.5, copy.getCoordinate().getX(), EPSILON);
         Assert.assertEquals(6.6, copy.getCoordinate().getY(), EPSILON);
-        //Assert.assertEquals(13.5 , copy.getCoordinate().getX(), EPSILON);
-        //Assert.assertEquals(16.6 , copy.getCoordinate().getY(), EPSILON);
+
+        copy.translate(10.0,10.0);
+        Assert.assertEquals(13.5 , copy.getCoordinate().getX(), EPSILON);
+        Assert.assertEquals(16.6 , copy.getCoordinate().getY(), EPSILON);
         
 
 
