@@ -29,4 +29,23 @@ public class LineString extends Point{
     public Point getPointN(int n){
         return points.get(n);
     }
+
+    /*@Override
+    public LineString clone(){
+        this.coordinate = new Coordinate(this.coordinate.getX(),this.coordinate.getY());
+        
+		Point p2 = new Point(this.coordinate); 
+        Point pointsclone = p2;
+
+        List<Point> points = new ArrayList<>();
+        points.add(p2);
+
+        List<Point> pointsCopy = new ArrayList<>();
+        pointsCopy.add(pointsclone);
+        
+        LineString l2 = new LineString(points);
+        LineString lCopy = new LineString(pointsCopy);
+
+        return lCopy;
+    }*/
 }

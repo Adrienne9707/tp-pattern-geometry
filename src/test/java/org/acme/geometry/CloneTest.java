@@ -18,7 +18,16 @@ public class CloneTest {
 		Point p = new Point(c); 
 
         Point copy = p.clone();
+
+        /*
+        List<Point> points = new ArrayList<>();
+        points.add(p);
+
         
+        
+        LineString l = new LineString(points);
+
+        LineString lcopy = l.clone();*/
 
         Assert.assertEquals(3.5, copy.getCoordinate().getX(), EPSILON);
         Assert.assertEquals(6.6, copy.getCoordinate().getY(), EPSILON);
@@ -27,7 +36,14 @@ public class CloneTest {
         Assert.assertEquals(13.5 , copy.getCoordinate().getX(), EPSILON);
         Assert.assertEquals(16.6 , copy.getCoordinate().getY(), EPSILON);
         
-
+        /*
+        Assert.assertEquals(1, lcopy.getNumPoints());
+        Assert.assertEquals(p, lcopy.getPointN(0));
+        Assert.assertEquals(false, l.isEmpty());
+        */
+        
+        
+        
 
     }
 }
