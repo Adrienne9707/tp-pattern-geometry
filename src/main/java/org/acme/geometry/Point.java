@@ -59,4 +59,10 @@ public class Point implements Geometry{
     }
 
     
+    @Override
+    public void accept(GeometryVisitor visitor){
+        return visitor;
+    }
+
+    
 }
