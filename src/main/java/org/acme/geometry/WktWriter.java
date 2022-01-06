@@ -10,12 +10,17 @@ public class WktWriter {
 
         if ( geometry instanceof Point ){
             Point point = (Point) geometry;
-            //(Point) geometry = new Point(new Coordinate(this.coordinate.getX(),this.coordinate.getY()));
+            LineString line = (LineString) geometry;
+            
             return system.out.printl("Point("+point.getCoordinate().getX() +
             point.getCoordinate().getY() ")");
+
         }else if ( geometry instanceof LineString ){
             LineString lineString = (LineString)geometry;
-            return system.out.printl(lineString(lineString.  ));
+            return system.out.printl("LineString("+line.getCoordinate().getX() +
+            line.getCoordinate().getY()+ "," +line.getCoordinate().getX() +
+            line.getCoordinate().getY()+ ")" );
+            
         }else{
             throw new RuntimeException("geometry type not supported");
         }
