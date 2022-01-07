@@ -3,6 +3,7 @@ package org.acme.geometry;
 public class Point implements Geometry{
 
     private Coordinate coordinate ;
+    private GeometryVisitor visitor;
 
     public Point(){
         this.coordinate = new Coordinate();
@@ -61,7 +62,7 @@ public class Point implements Geometry{
     
     @Override
     public void accept(GeometryVisitor visitor){
-        return visitor;
+       this.visitor = visitor;
     }
 
     
